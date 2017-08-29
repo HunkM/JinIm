@@ -16,3 +16,10 @@ function redis_connect(){
     $redis->connect('127.0.0.1','6379');
     return $redis;
 }
+
+function set_result($msg,$data,$code){
+    $result['code'] = $code;
+    $result['msg'] = $msg;
+    $result['data'] = $data;
+    return $result;
+}

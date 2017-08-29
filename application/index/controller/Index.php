@@ -20,4 +20,22 @@ class Index
         print_r($pop);
         print_r($list1);
     }
+
+    public function test_json(){
+        $arr['0']=[
+            'name'=>'ccc',
+            'id'=>5
+        ];
+        $arr['1']=[
+            'name'=>'ccc',
+            'id'=>5
+        ];
+        $arr['2']=[
+            'name'=>'ccc',
+            'id'=>5
+        ];
+        $a = $arr;
+        $result = set_result('xxxx',$arr,1);
+        return json($result);
+    }
 }
